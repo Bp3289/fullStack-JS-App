@@ -56,6 +56,10 @@ At this point, we still haven't built out our database, so hardcoding the data f
 2. Create a `.get()` (`#show`) route in Express that returns one of your hardcoded cards based on ID.
 3. Create a `.post()` (`#create`) route in Express that adds a hardcoded card to your array of hardcoded cards.
 
+And finally:
+
+1. Go back to your Cards Controller on your front end, and replace the Heroku address in your `$http` calls with the address of your local server.
+
 By the end of this step, you should not need any hardcoded data on your front-end, nor any 3rd party APIs.  We're getting there.
 
 For reference, you can examine your work in the [Express Routing Lab](https://github.com/den-wdi-2/express-routing-lab) or the [Express Personal API Lab](https://github.com/den-wdi-2/express-personal-api)
@@ -72,10 +76,6 @@ Once this is finished:
 
 1. Create a `seed.js` file which connects to the same Mongo DB as your `server.js` file.
 2. Add all of the questions in your hardcoded array into the DB inside this `seed.js` file.
-
-And finally:
-
-1. Go back to your Cards Controller on your front end, and replace the Heroku address in your `$http` calls with the address of your local server.
 
 By the end of this step, our `questionsList` on the front-end should be grabbed from our very own database.
 
