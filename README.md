@@ -36,7 +36,6 @@ For reference, you can examine the [Express Lesson](https://github.com/den-wdi-2
 
 1. Use the following Heroku endpoint to replace your hard-coded Cards: `https://shielded-forest-41789.herokuapp.com/api/flashcards`
 2. In `cardsController.js`, use `$http` to GET the flashcards.  This should replace your questionsList array.
-3. Use `$http` to GET one flashcard by ID.  Save this as `vm.singleQuestion`.
 
 Don't forget to `$inject` `$http` before you try to use it in the controller.
 
@@ -88,6 +87,7 @@ OK, now we can GET and POST, but that's not very helpful for a user that is look
 1. Build an HTML form that will allow us to submit a new card through our new POST route.  Since this is Angular, you will probably want to use `ng-submit`.
 2. Add a button on each card that allows you to DELETE a card.  Connect this to a DELETE route on your back end. (Hint: this one is a little tricky.  You will need to pass the delete method from your controller into your cardDirective template.  You should look at the [Custom Directives Lab](https://github.com/den-wdi-2/angular-directives-lab) for details on how to do this.)
 3. Use a form that lets you edit and UPDATE a card.  For now, just display it under each card.  Try to borrow as much as you can from your work with the form from #1.
+4. Add a button on each card that allows you to select a card.  Use $http to GET that flashcard by ID from the back end. Save this as vm.singleQuestion.  Create an HTML element that displays "Selected: `singleQuestion`" above the cards.
 
 For reference, you can examine your work on the [Criminals Lab](https://github.com/den-wdi-2/http-lab).
 
