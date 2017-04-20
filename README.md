@@ -21,7 +21,7 @@ At the end of this lab, we will have a full CRUD app using Javascript through th
 
 <img width="965" alt="Custom Card" src="https://cloud.githubusercontent.com/assets/25366/9668827/a352dbf8-5238-11e5-8d00-80ccf02ca95c.png">
 
-> Note: We will give suggestions of specific projects/labs you have completed that will be useful for reference on specific steps.  For general reference, any of your labs from the Node week would be helpful, but the [Personal API Lab](https://github.com/den-wdi-2/express-personal-api) and [Tunely Lab](https://github.com/den-wdi-2/tunely) may have the most complete code.
+> Note: We will give suggestions of specific projects/labs you have completed that will be useful for reference on specific steps.  For general reference, any of your labs from the Node week would be helpful, but the [Personal API Lab](https://github.com/den-materials/express-personal-api) and [Tunely Lab](https://github.com/den-materials/tunely) may have the most complete code.
 
 ### Step 1: Server Setup
 
@@ -30,7 +30,7 @@ At the end of this lab, we will have a full CRUD app using Javascript through th
 2. Create a JS file that will act as your server file.
 4. Serve up your front-end files from this server, preferably in a `public` directory.
 
-For reference, you can examine the [Express Lesson](https://github.com/den-wdi-2/express).
+For reference, you can examine the [Express Lesson](https://github.com/den-materials/express).
 
 ### Step 2: $http / AJAX Connection to Back-End
 
@@ -41,7 +41,7 @@ Don't forget to `$inject` `$http` before you try to use it in the controller.
 
 By the end of this step, you should not need any hardcoded data on your front-end.
 
-For reference, you can examine your work in the [Criminals Lab](https://github.com/den-wdi-2/http-lab).
+For reference, you can examine your work in the [Criminals Lab](https://github.com/den-materials/http-lab).
 
 ### Step 3: Create Express Routes
 
@@ -61,7 +61,7 @@ And finally:
 
 By the end of this step, you should not need any hardcoded data on your front-end, nor any 3rd party APIs.  We're getting there.
 
-For reference, you can examine your work in the [Express Routing Lab](https://github.com/den-wdi-2/express-routing-lab) or the [Express Personal API Lab](https://github.com/den-wdi-2/express-personal-api)
+For reference, you can examine your work in the [Express Routing Lab](https://github.com/den-materials/express-routing-lab) or the [Express Personal API Lab](https://github.com/den-materials/express-personal-api)
 
 ### Step 4: Integrate Mongo/Mongoose
 
@@ -78,18 +78,18 @@ Once this is finished:
 
 By the end of this step, our `questionsList` on the front-end should be grabbed from our very own database.
 
-For reference, you can examine your work on the [Mongoose Books App](https://github.com/den-wdi-2/mongoose-books-app) 
+For reference, you can examine your work on the [Mongoose Books App](https://github.com/den-materials/mongoose-books-app) 
 
 ### Step 5: CRUD All the Things!
 
 OK, now we can GET and POST, but that's not very helpful for a user that is looking to *create* a *new* card, *update* a card, or *delete* one.  Let's build out that functionality:
 
 1. Build an HTML form that will allow us to submit a new card through our new POST route.  Since this is Angular, you will probably want to use `ng-submit`.
-2. Add a button on each card that allows you to DELETE a card.  Connect this to a DELETE route on your back end. (Hint: this one is a little tricky.  You will need to pass the delete method from your controller into your cardDirective template.  You should look at the [Custom Directives Lab](https://github.com/den-wdi-2/angular-directives-lab) for details on how to do this.)
+2. Add a button on each card that allows you to DELETE a card.  Connect this to a DELETE route on your back end. (Hint: this one is a little tricky.  You will need to pass the delete method from your controller into your cardDirective template.  You should look at the [Custom Directives Lab](https://github.com/den-materials/angular-directives-lab) for details on how to do this.)
 3. Use a form that lets you edit and UPDATE a card.  For now, just display it under each card.  Try to borrow as much as you can from your work with the form from #1.
 4. Add a button on each card that allows you to select a card.  Use $http to GET that flashcard by ID from the back end. Save this as vm.singleQuestion.  Create an HTML element that displays "Selected: `singleQuestion`" above the cards.
 
-For reference, you can examine your work on the [Criminals Lab](https://github.com/den-wdi-2/http-lab).
+For reference, you can examine your work on the [Criminals Lab](https://github.com/den-materials/http-lab).
 
 ### Step 6: Looking Good
 
@@ -108,7 +108,7 @@ Here are some things we can improve on this app...
 * Refactor your app to fit Angular and Node best practices.  Remember the following:
    * Keep code DRY
    * [Principle of Single Responsibility](https://en.wikipedia.org/wiki/Single_responsibility_principle)
-   * [Angular Style Guide](https://github.com/den-wdi-2/angular-style-guide)
+   * [Angular Style Guide](https://github.com/den-materials/angular-style-guide)
 * Use $resource instead of $http
 * Clean up the UI and CSS so you are proud of the appearance
 * Update our cards in place with [angular-xeditable](https://vitalets.github.io/angular-xeditable/)
